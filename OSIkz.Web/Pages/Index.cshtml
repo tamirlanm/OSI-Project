@@ -4,37 +4,63 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center mb5=5">
-    <h1 class="display-4">Welcome to OSIkz</h1>
-    <p>Transparent control of your home</p>
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 20px;
+        padding: 4rem 2rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 10px 30px rgba(118, 75, 162, 0.3);
+    }
+    .premium-card {
+        border: none;
+        border-radius: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .premium-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+    }
+    .card-balance { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; }
+    .card-debt { background: linear-gradient(135deg, #ED213A 0%, #93291E 100%); color: white; }
+    .card-req { background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); color: #333; }
+</style>
+
+<div class="hero-section text-center">
+    <h1 class="display-4 fw-bold mb-3">Welcome to OSIkz</h1>
+    <p class="lead mb-0 opacity-75">Modern, transparent and reliable management of your home.</p>
 </div>
 
-<div class="row">
+<div class="row g-4">
     <div class="col-md-4">
-        <div class="card text-white bg-success mb-3 shadow-sm">
-            <div class="card-header">House balance</div>
-            <div class="card-body">
-                <h2 class="card-title">1 250 000 ₸</h2>
-                <p class="card-text">Funds raised for capital Repairs.</p>
+        <div class="card premium-card card-balance h-100 shadow-sm">
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+            <h6 class="text-uppercase fw-bold opacity-75 mb-3">House balance</h6>
+            <h2 class="display-5 fw-bolder mb-3">1 250 000 ₸</h2>
+            <p class="mb-0 opacity-75 small">Funds raised for capital Repairs.</p>
             </div>
         </div>
     </div>
     
     <div class="col-md-4">
-        <div class="card text-white bg-danger mb-3 shadow-sm">
-            <div class="card-header">Your debt</div>
-            <div class="card-body">
-                <h2 class="card-title">0 ₸</h2>
-                <p class="card-text">You have no unpaid bills.</p>
+        <div class="card premium-card card-debt h-100 shadow-sm">
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+                <h6 class="text-uppercase fw-bold opacity-75 mb-3">Your Debt</h6>
+                <h2 class="display-5 fw-bolder mb-3">0 ₸</h2>
+                <p class="mb-0 opacity-75 small">You have no outstanding bills</p>
             </div>
         </div>
     </div>
+
     <div class="col-md-4">
-        <div class="card bg-light mb-3 shadow-sm">
-            <div class="card-header">Requests</div>
-            <div class="card-body">
-                <h2 class="card-title">2 active</h2>
-                <a href="/Requests/Index" class="btn btn-outline-primary">Go to applications</a>
+        <div class="card premium-card card-req h-100 shadow-sm">
+            <div class="card-body p-4 text-center d-flex flex-column justify-content-center">
+                <h6 class="text-uppercase fw-bold text-muted mb-3">My Requests</h6>
+                <h2 class="display-5 fw-bolder mb-4 text-dark">2 active</h2>
+                <div>
+                    <a href="/Requests/Index" class="btn btn-dark rounded-pill px-4 py-2 fw-bold">Go to requests</a>
+                </div>
             </div>
         </div>
     </div>
