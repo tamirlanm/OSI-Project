@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OSIkz.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+924e5ba7b01f16713af4e7141f882462344fb51c")]
 [assembly: System.Reflection.AssemblyProductAttribute("OSIkz.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OSIkz.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

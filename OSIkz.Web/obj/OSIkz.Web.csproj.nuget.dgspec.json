@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj": {}
+    "C:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj": {}
   },
   "projects": {
-    "c:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj": {
+    "C:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj",
+        "projectUniqueName": "C:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj",
         "projectName": "OSIkz.Web",
-        "projectPath": "c:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj",
+        "projectPath": "C:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj",
         "packagesPath": "C:\\Users\\TamirlanM\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\obj\\",
+        "outputPath": "C:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

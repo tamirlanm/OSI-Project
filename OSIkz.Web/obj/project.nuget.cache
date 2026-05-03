@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9HWao7RMejs=",
+  "dgSpecHash": "FHX1sGT5ZtA=",
   "success": true,
-  "projectFilePath": "c:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj",
+  "projectFilePath": "C:\\Users\\TamirlanM\\Desktop\\ASP.NET Core projects\\OSIkz.Web\\OSIkz.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TamirlanM\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\TamirlanM\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\10.0.7\\microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.7.nupkg.sha512",
