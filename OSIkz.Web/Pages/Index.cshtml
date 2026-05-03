@@ -4,7 +4,38 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mb5=5">
+    <h1 class="display-4">Welcome to OSIkz</h1>
+    <p>Transparent control of your home</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3 shadow-sm">
+            <div class="card-header">House balance</div>
+            <div class="card-body">
+                <h2 class="card-title">1 250 000 ₸</h2>
+                <p class="card-text">Funds raised for capital Repairs.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card text-white bg-danger mb-3 shadow-sm">
+            <div class="card-header">Your debt</div>
+            <div class="card-body">
+                <h2 class="card-title">0 ₸</h2>
+                <p class="card-text">You have no unpaid bills.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-light mb-3 shadow-sm">
+            <div class="card-header">Requests</div>
+            <div class="card-body">
+                <h2 class="card-title">2 active</h2>
+                <a href="/Requests/Index" class="btn btn-outline-primary">Go to applications</a>
+            </div>
+        </div>
+    </div>
 </div>

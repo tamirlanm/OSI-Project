@@ -1,0 +1,55 @@
+@page
+@model OSIkz.Web.Pages.Requests.IndexModel
+@{
+    ViewData["Title"] = "My requests";
+}
+
+<div class="container mt-4">
+    <h2>My repair requests</h2>
+    <a href="/Requests/Create" class="btn btn-primary mb-3">Create new request</a>
+
+    <table class="table table-hover shadow-sm">
+        <thead class="table-light">
+            <tr>
+                <th>Issue Title</th>
+                <th>Author</th>
+                <th>Priority (AI)</th>
+                <th>Current Status</th>
+                <th>Date Created</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var req in Model.Requests)
+            {
+                <tr>
+                    <td>@req.Title</td>
+                    <td>@(req.User != null ? req.User.UserName : "I'm")</td>
+                    <td>
+                        @if (req.Priority == "Urgent")
+                        {
+                            <span class="badge bg-danger text-white">🔥 URGENT</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-info text-dark">Normal</span>
+                        }
+                    </td>
+
+                    <td>
+                        <span class="badge @(req.Status == "Open" ? "bg-warning" : "bg-success")">
+                            @req.Status
+                        </span>
+                    </td>
+                    
+                    <td>@req.CreatedAt.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (!Model.Requests.Any()){
+        <div class="alert-secondary text-center">
+            You don't have any requests.
+        </div>
+    }
+</div>

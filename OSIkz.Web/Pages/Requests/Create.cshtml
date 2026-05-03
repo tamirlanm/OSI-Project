@@ -1,0 +1,29 @@
+@page
+@model OSIkz.Web.Pages.Requests.CreateModel
+@{
+    ViewData["Title"] = "Create Request";
+}
+
+<div class="container mt-4">
+    <h2>Create a new repair request</h2>
+    <p class="text-muted">Describe the problem, and our system will automatically prioritize it.</p>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label">Short Title</label>
+                    <input type="text" class="form-control" name="Title" placeholder="For example: Burst Pipe" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Detailed Description (optional)</label>
+                    <textarea class="form-control" name="Description" rows="4" placeholder="For example: Water is gushing out in the bathroom!"></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit request</button>
+                <a href="/Requests/Index" class="btn btn-secondary">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
