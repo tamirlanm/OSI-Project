@@ -12,7 +12,7 @@ namespace OSIkz.Web.Models
 
         public string Priority {get;set;} = "Regular";
         public string Status {get; set;} = "Open";
-
+        public string? PhotoPath {get; set;} 
         public DateTime CreatedAt {get; set;} = DateTime.UtcNow;
         public string UserId {get;set;} = string.Empty;
         public ApplicationUser? User {get;set;} 
